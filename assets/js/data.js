@@ -5,6 +5,40 @@ data = {
         "",
         "I am always eager to explore innovative approaches to quantitative finance and collaborate on impactful projects.",
      ],
+    "github_projects": [
+        {
+            "name": "portfolio",
+            "description": "Personal portfolio website showcasing quantitative finance projects and professional experience",
+            "language": "JavaScript",
+            "technologies": ["HTML", "CSS", "JavaScript", "Particles.js"],
+            "html_url": "https://github.com/vkorde3/portfolio",
+            "homepage": "https://vkorde3.github.io/portfolio/"
+        },
+        {
+            "name": "quantitative-finance-models",
+            "description": "Collection of quantitative finance models including Black-Scholes pricing, Monte Carlo simulations, and risk analytics",
+            "language": "Python",
+            "technologies": ["Python", "NumPy", "Pandas", "Matplotlib", "SciPy"],
+            "html_url": "https://github.com/vkorde3/quantitative-finance-models",
+            "homepage": null
+        },
+        {
+            "name": "machine-learning-trading",
+            "description": "Machine learning algorithms for stock price prediction and trading strategy optimization",
+            "language": "Python",
+            "technologies": ["Python", "TensorFlow", "Scikit-learn", "Pandas", "NumPy"],
+            "html_url": "https://github.com/vkorde3/machine-learning-trading",
+            "homepage": null
+        },
+        {
+            "name": "derivatives-pricing-engine",
+            "description": "Advanced derivatives pricing engine with support for exotic options and structured products",
+            "language": "C++",
+            "technologies": ["C++", "Python", "QuantLib", "Boost"],
+            "html_url": "https://github.com/vkorde3/derivatives-pricing-engine",
+            "homepage": null
+        }
+    ],
     "education":[
         {
             "school": "Cornell University",

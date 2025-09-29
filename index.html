@@ -30,32 +30,41 @@
 </head>
 
 <body>
+  <!-- Header Navigation -->
+  <header id="header">
+    <div class="container">
+      <div class="logo">Vishakha Korde</div>
+      <nav id="navbar">
+        <a class="navbar-item" href="#about" data-scroll>About</a>
+        <a class="navbar-item" href="#skills" data-scroll>Skills</a>
+        <a class="navbar-item" href="#education" data-scroll>Education</a>
+        <a class="navbar-item" href="#experience" data-scroll>Experience</a>
+        <a class="navbar-item" href="#projects" data-scroll>Projects</a>
+        <a class="navbar-item" href="#github-projects" data-scroll>GitHub</a>
+        <a class="navbar-item" href="#leadership" data-scroll>Leadership</a>
+        <a class="navbar-item" href="#contact-section" data-scroll>Contact</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <span id="theme-icon">🌙</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
   <div id="particles-js">
-    <div id="contact" class="header">
+    <div class="header">
       <span class="site-title">VISHAKHA KORDE</span>
-      <br> <br>
       <span class="site-description">QUANT RESEARCH | STRUCTURED PRODUCTS | MACHINE LEARNING</span>
-      <br> <br>
-      <!-- <div class="dock">
-        <a aria-label="My LinkedIn Profile" target="_blank" >
-          <img class="icon fa fa-linkedin" src="./assets/icons/dock_icons/linkedin.png" aria-hidden="true" href="https://www.linkedin.com/in/vishakha-korde/">
-        </a>
-        <a aria-label="My Github Profile" target="_blank" href="https://github.com/">
-            <i class="icon fa fa-github-alt" aria-hidden="true"></i>
-          </a>
-        <a aria-label="My Résumé" target="_blank" href="https://drive.google.com/file/d/1u9saEZQXEm6G8xSrFVA8whb2J1OckEQm/view?usp=drive_link">
-          <img src="./assets/icons/dock_icons/resume.png" aria-hidden="true" href="https://drive.google.com/file/d/1LeLXFaEN4Za31fW_AcoTCvairWNp1R9n/view?usp=sharing">
-        </a>
-        <a aria-label="Send Email" href="mailto:vk369@cornell.edu" target="_blank">
-          <img src="./assets/icons/dock_icons/gmail.png" aria-hidden="true">
-        </a>
-      </div> -->
       
       <div class="dock">
         <div class="dock-item">
           <div class="dock-entry">
             <img class="icon" src="./assets/icons/dock_icons/linkedin.png" alt="LinkedIn">
             <button onclick="openInNewTab('https://www.linkedin.com/in/vishakha-korde/')">LinkedIn</button>
+          </div>
+          <div class="dock-entry">
+            <img class="icon" src="./assets/icons/dock_icons/github.png" alt="GitHub">
+            <button onclick="openInNewTab('https://github.com/vkorde3')">GitHub</button>
           </div>
           <div class="dock-entry">
             <img class="icon" src="./assets/icons/dock_icons/resume.png" alt="Resume">
@@ -67,90 +76,94 @@
           </div>
         </div>
       </div>
-      
-      
-       
     </div>
-  </div>
-  </div>
-
-  <div id="header">
-    <div>
-      <span class="navbar-item">Vishakha Korde</span>
-    </div>
-    <div id="navbar" class="sidebar-inactive">
-      <a class="link navbar-item" href="#about" data-scroll>About</a>
-      <a class="link navbar-item" href="#skills" data-scroll>Skills</a>
-      <a class="link navbar-item" href="#education" data-scroll>Education</a>
-      <a class="link navbar-item" href="#experience" data-scroll>Experience</a>
-      <a class="link navbar-item" href="#projects" data-scroll>Projects</a>
-      <a class="link navbar-item" href="#leadership" data-scroll>Leadership</a>
-      <a class="link navbar-item" href="#interests" data-scroll>Interests</a>
-      <a class="link navbar-item" href="#contact" data-scroll>Contact</a>
-    </div>
-
-    <!-- <img id="navbar-btn" src="icons/menu-white.png"> -->
   </div>
 
   <!-- About Section -->
   <section id="about">
-    <!-- User Introduction-->
-    <div class="user-details">
-      <h1>My Story</h1>
-      <picture>
-        <source type="image/webp" srcset="./assets/icons/VSK.png" alt="Professional Photo" width="20%"
-          style="border-radius: 50%" />
-        <img src="./assets/icons/VSK.png" alt="Professional Me" width="20%" style="border-radius: 50%" />
-      </picture>
-      <div class="about_content">
-        <p id="about_p">
-        </p>
+    <div class="section_block">
+      <div class="section_title">
+        <h1>My Story</h1>
+      </div>
+      
+      <!-- User Introduction-->
+      <div class="user-details fade-in">
+        <picture>
+          <source type="image/webp" srcset="./assets/icons/VSK.png" alt="Professional Photo" />
+          <img src="./assets/icons/VSK.png" alt="Professional Me" class="profile-image" />
+        </picture>
+        
+        <div class="core-expertise">
+          <h3>Core Expertise</h3>
+          <div class="expertise-tags">
+            <span class="expertise-tag">Quantitative Research</span>
+            <span class="expertise-tag">Structured Products</span>
+            <span class="expertise-tag">Risk Analytics</span>
+            <span class="expertise-tag">Machine Learning</span>
+            <span class="expertise-tag">Financial Engineering</span>
+          </div>
+        </div>
+        
+        <div class="about_content">
+          <p id="about_p"></p>
+        </div>
       </div>
     </div>
+  </section>
 
-    <!-- User Specifics -->
-    <div id="skills" class="user">
-      <!-- Technology Stack #1: Languages -->
-      <div class="category">
-        <h2>Languages</h2>
-        <div class="image-grid">
-          <picture><img src="./assets/icons/bg_icons/python.png" alt="Python"></picture>
-          <picture><img src="./assets/icons/bg_icons/java.png" alt="Java"></picture>
-          <picture><img src="./assets/icons/bg_icons/cpp.png" alt="C++"></picture>
-          <picture><img src="./assets/icons/bg_icons/r.webp" alt="R"></picture>
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="section_block">
+      <div class="section_title">
+        <h1>Technical Skills</h1>
+      </div>
+      
+      <!-- User Specifics -->
+      <div class="user">
+        <!-- Technology Stack #1: Languages -->
+        <div class="category fade-in">
+          <h2>Languages</h2>
+          <div class="image-grid">
+            <picture><img src="./assets/icons/bg_icons/python.png" alt="Python"></picture>
+            <picture><img src="./assets/icons/bg_icons/java.png" alt="Java"></picture>
+            <picture><img src="./assets/icons/bg_icons/cpp.png" alt="C++"></picture>
+            <picture><img src="./assets/icons/bg_icons/r.webp" alt="R"></picture>
+          </div>
+        </div>
+
+        <!-- Technology Stack #2: Tools -->
+        <div class="category fade-in">
+          <h2>Tools</h2>
+          <div class="image-grid">
+            <picture><img src="./assets/icons/bg_icons/git.png" alt="Git"></picture>
+            <picture><img src="./assets/icons/bg_icons/github.png" alt="GitHub"></picture>
+            <picture><img src="./assets/icons/bg_icons/vscode.png" alt="VS Code"></picture>
+            <picture><img src="./assets/icons/bg_icons/jira.webp" alt="JIRA"></picture>
+          </div>
         </div>
       </div>
 
-      <!-- Technology Stack #2: Front-End -->
-      <div class="category">
-        <h2>Front-End</h2>
-        <div class="image-grid">
-          <picture><img src="./assets/icons/bg_icons/csharp.png" alt="C#"></picture>
-          <picture><img src="./assets/icons/bg_icons/html.png" alt="HTML"></picture>
-          <picture><img src="./assets/icons/bg_icons/css.png" alt="CSS"></picture>
-          <picture><img src="./assets/icons/bg_icons/js.png" alt="JavaScript"></picture>
+      <div class="user">
+        <!-- Technology Stack #3: Front-End -->
+        <div class="category fade-in">
+          <h2>Front-End</h2>
+          <div class="image-grid">
+            <picture><img src="./assets/icons/bg_icons/html.png" alt="HTML"></picture>
+            <picture><img src="./assets/icons/bg_icons/css.png" alt="CSS"></picture>
+            <picture><img src="./assets/icons/bg_icons/js.png" alt="JavaScript"></picture>
+            <picture><img src="./assets/icons/bg_icons/csharp.png" alt="C#"></picture>
+          </div>
         </div>
-      </div>
 
-      <!-- Technology Stack #3: Back-End -->
-      <div class="category">
-        <h2>Back-End</h2>
-        <div class="image-grid">
-          <picture><img src="./assets/icons/bg_icons/sql.webp" alt="SQL"></picture>
-          <picture><img src="./assets/icons/bg_icons/mongodb.webp" alt="SQL"></picture>
-          <picture><img src="./assets/icons/bg_icons/postgres.webp" alt="SQL"></picture>
-          <picture><img src="./assets/icons/bg_icons/django.webp" alt="SQL"></picture>
-        </div>
-      </div>
-
-      <!-- Technology Stack #4: Tools -->
-      <div class="category">
-        <h2>Tools</h2>
-        <div class="image-grid">
-          <picture><img src="./assets/icons/bg_icons/git.png" alt="Git"></picture>
-          <picture><img src="./assets/icons/bg_icons/github.png" alt="GitHub"></picture>
-          <picture><img src="./assets/icons/bg_icons/vscode.png" alt="VS Code"></picture>
-          <picture><img src="./assets/icons/bg_icons/jira.webp" alt="JIRA"></picture>
+        <!-- Technology Stack #4: Back-End -->
+        <div class="category fade-in">
+          <h2>Back-End</h2>
+          <div class="image-grid">
+            <picture><img src="./assets/icons/bg_icons/sql.webp" alt="SQL"></picture>
+            <picture><img src="./assets/icons/bg_icons/mongodb.webp" alt="MongoDB"></picture>
+            <picture><img src="./assets/icons/bg_icons/postgres.webp" alt="PostgreSQL"></picture>
+            <picture><img src="./assets/icons/bg_icons/django.webp" alt="Django"></picture>
+          </div>
         </div>
       </div>
     </div>
@@ -194,7 +207,7 @@
   <section id="projects">
     <div class="section_block" id="projects">
       <div class="section_title">
-        <h1>Projects</h1>
+        <h1>Academic Projects</h1>
       </div>
       <div class="timeline_block">
         <div class="timeline">
@@ -203,6 +216,18 @@
           </div>
           <div class="timeline_list"></div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GitHub Projects Section -->
+  <section id="github-projects">
+    <div class="section_block">
+      <div class="section_title">
+        <h1>GitHub Projects</h1>
+      </div>
+      <div class="projects-grid" id="github-projects-grid">
+        <!-- GitHub projects will be populated here -->
       </div>
     </div>
   </section>
@@ -224,12 +249,63 @@
     </div>
   </section>
 
+  <!-- Interests Section -->
   <section id="interests">
     <div class="section_block" id="interests">
       <div class="section_title">
         <h1>Interests</h1>
       </div>
       <div class="timeline_block about_interests"></div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact-section">
+    <div class="section_block">
+      <div class="section_title">
+        <h1>Get In Touch</h1>
+      </div>
+      <div class="contact-container">
+        <div class="contact-info fade-in">
+          <h3>Let's Connect</h3>
+          <p>I'm always interested in discussing quantitative finance, machine learning applications in trading, and potential collaboration opportunities.</p>
+          <div class="contact-links">
+            <a href="mailto:vk369@cornell.edu" class="contact-link">
+              <span>📧</span>
+              <span>vk369@cornell.edu</span>
+            </a>
+            <a href="https://www.linkedin.com/in/vishakha-korde/" target="_blank" class="contact-link">
+              <span>💼</span>
+              <span>LinkedIn Profile</span>
+            </a>
+            <a href="https://github.com/vkorde3" target="_blank" class="contact-link">
+              <span>💻</span>
+              <span>GitHub Profile</span>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form fade-in">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
     </div>
   </section>
 
