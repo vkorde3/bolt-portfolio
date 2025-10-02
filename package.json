@@ -1,0 +1,22 @@
+{
+  "name": "vishakha-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website for Vishakha Korde - Quantitative Finance Professional",
+  "main": "index.html",
+  "scripts": {
+    "dev": "http-server . -p 3000 -o",
+    "start": "http-server . -p 3000",
+    "build": "echo 'Static site - no build required'"
+  },
+  "keywords": [
+    "portfolio",
+    "finance",
+    "quantitative",
+    "website"
+  ],
+  "author": "Vishakha Korde",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
